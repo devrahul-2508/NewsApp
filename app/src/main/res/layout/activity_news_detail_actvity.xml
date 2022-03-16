@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsDetailActvity"
+    android:background="@color/grey">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idToolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="News App"
+                android:textAlignment="center"
+                android:textColor="@color/yellow"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn"
+        android:layout_below="@id/idToolbar2">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/IVdetail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="50dp"
+                android:padding="3dp"
+                android:scaleType="centerCrop">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/TVHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/IVdetail"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="News Heading"
+                android:textStyle="bold"
+                android:textColor="@color/yellow"
+                android:textSize="25sp"
+                android:padding="4dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TVHeading"
+                android:text="Description"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:id="@+id/TVDescription"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TVDescription"
+                android:id="@+id/TVcontent"
+                android:text="Content"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:textSize="18sp"
+                android:textColor="@color/white">
+
+            </TextView>
+        </RelativeLayout>
+    </ScrollView>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+       android:backgroundTint="@color/yellow"
+        android:text="Read More"
+        android:textAllCaps="false"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+
+    </Button>
+
+
+
+</RelativeLayout>
